@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Khulla Pathsala </title>
+</head>
+<style>
+    li a:hover {
+        background-color: rgb(180, 90, 67);
+        text-transform: uppercase;
+    }
+</style>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<nav style="background-color: rgb(83, 105, 105);" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a href="Home.html"><img src="lgo.jpg" width="100" height="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="float: right;margin-right: 50px;">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About Us.html">About US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="SignUP.html">Signup</a></li>
+
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--signup form-->
+<script>
+    function validate() {
+        var a = document.myform.pass.value;
+        var b = document.myform.confirm.value;
+        if (a == b) {
+            document.getElementById("msg").style.color = "green";
+            document.getElementById("msg").innerHTML = "Password Matched";
+            document.getElementById("ab").style.borderColor = "green";
+            document.getElementById("cd").style.borderColor = "green";
+            return true;
+        } else {
+            document.getElementById("msg").style.color = "red";
+            document.getElementById("msg").innerHTML = "Password did not match";
+        }
+    }
+</script>
+<style>
+    body {
+        background-image: url("REG.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+</style>
+
+<body>
+    <link rel="shortcut icon" href="#" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styling.css">
+    <form action="login.html" method="post" name="myform" class="signup" onsubmit="return validate();"
+        autocomplete="off">
+        <div class="myform">Create Account</div>
+
+        <label class="id" name="firstName"> First Name:</label>
+        <div class="form">
+            <input class="inputField" type="text" placeholder="First Name" required>
+        </div>
+        <label class="id" name="lastName"> Last Name:</label>
+        <div class="form">
+            <input class="inputField" class="inputField" type="text" placeholder="Last Name" required>
+
+        </div>
+
+        <label class="id" name="emailAd"> Email Address:</label>
+        <div class="form">
+            <input class="inputField" type="text" placeholder="abc@email.com" required>
+        </div>
+
+        <label class="id" name="Pass"> Password:</label>
+        <div class="form">
+            <input class="inputField" name="psw" id="ab" type="password" placeholder="Password" required>
+        </div>
+
+        <label class="id"> Confirm Password:</label>
+
+        <div class="form">
+            <input class="inputField" name="confirm" id="cd" type="password" placeholder="Confirm Password" required
+                onkeyup='validate();'>
+            <p id="msg"> </p>
+            <p id="pw"> </p>
+        </div>
+
+        <div>
+            <button id="signUpBtn" type="submit" class="signUpBtn">Sign Up</button>
+        </div>
+        <div>
+
+            <span style="color: rgb(27, 26, 24);">Already Registered ?</span><a href="login.html"
+                style="text-decoration: none; color:rgb(53, 180, 74);"> Login Here</a>
+        </div>
+    </form>
+</body>
+<!--body {
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7)),(rgba(4, 9, 30, 0.7)), url("REG.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }-->
+</html>
