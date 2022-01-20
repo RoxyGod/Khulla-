@@ -2,65 +2,155 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" text="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <title>Khulla Pathsala </title>
+  <title>Khulla Pathsala </title>
 </head>
+
+
+<body >
 <style>
-    li a:hover{
-        background-color: rgb(80, 255, 153);
-        text-transform: uppercase;
-    }     
+  body{
+    background-image: url("home-bg.jpg")no-repeat; 
+    
+    align-items: center;
+    justify-content: center;
+  background-size: cover;
+    background-position: center;
+
+}
 </style>
-<body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <nav style="background-color: rgb(83, 105, 105);" class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a href="Home.html"><img src="lgo.jpg" width="100" height="60"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div style="float: right;margin-right: 50px;">
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="About Us.html">About US</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Account
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><a class="dropdown-item" href="demosign.html">Signup</a></li>
+
+<header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <nav style="background-color: rgb(83, 105, 105);" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a href="Home.html"><img src="lgo.jpg" width="100" height="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="float: right;margin-right: 50px;">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li id="ab" class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li id="ab" class="nav-item">
+              <a class="nav-link " href="About Us.html">About US</a>
+            </li>
+            <li id="ab" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li id="ab"><a class="dropdown-item" href="login.html">Login</a></li>
+                <li id="ab"><a class="dropdown-item" href="SignUP.html">Signup</a></li>
 
 
 
-                        </ul>
-                    </li>
+              </ul>
+            </li>
 
-                </ul>
+          </ul>
 
-            </div>
         </div>
+      </div>
     </div>
-    </nav>
-    <img src="home1.jpg" class="img-fluid" width="700" height="900">
-    <!--home ma lekne kura lekne-->
-    <!-- <a class="navbar-brand"  style="font-family: 'Times New Roman', Times, serif;">Khulla Pathsala</a>-->
+  </nav>
+</header>
+<img src="home-bg.jpg" class="img-fluid" alt="...">
+
+  <!--div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img width="1000" height="500" src="lgo.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome To Khulla Pathsala</h2>
+          <p>We Assure Your Best Learning with us</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img width="1000" height="500" src="REG.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Make Your Future Bright</h2>
+          <p>We are the two time award wining e-learning site.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div-->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Branch Locations</h4>
+          <ul>
+            <li><a href="#">Nepal</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">USA</a></li>
+            <li><a href="#">Russia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4> Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="About us.html">About</a></li>
+            <li><a href="SignUP.html">Signup</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4> Contact info</h4>
+          <ul>
+            <li><a href="#">Chitwan,Nepal 4200</a></li>
+            <li><a href="#">Rajstha665@gmail.com</a></li>
+            <li><a href="#">+977 9865004522</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div id="social" class="Social-links">
+            <a href="https://www.facebook.com/profile.php?id=100049907109217"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/_rajstha.ds?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h6 class="text-center copyright ">Copyright © 2022 Khulla Pathsala. Since 1995 AD.</h6>
+  </footer>
+
 </body>
 
 </html>
